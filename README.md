@@ -1,7 +1,7 @@
 # keystroke
 
 Purpose for adding this to github
-  - Often we find ourselves in a situation wherein we want to simulate keystrokes for some major project so one could easily use this C program without any waste of time.
+  - Often we find ourselves in a situation wherein we want to simulate keystrokes (especially **arrow keys**) for some major project so one could easily use this C program without any waste of time.
   
 Pre-Requisites
   - Any Linux platform with **C++ & Bash**

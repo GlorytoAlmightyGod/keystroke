@@ -22,6 +22,6 @@ Functions/Features
       
 
 How to Use?
-  - Compile using      gcc -o key keypress.c -lX11 -lXtst
+  - Compile using      **gcc -o key keypress.c -lX11 -lXtst**
   - Run **./key x**   ,where **x is a string** corresponding to the keystroke you wanna imply for ex: up,down,enter etc.
   - See the program in case of any silly doubts.

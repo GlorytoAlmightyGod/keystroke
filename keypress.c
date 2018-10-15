@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	{
 		unsigned int key,keycode;
 		
-		// Comparing the given arguement with our defined commands & assigning respective keycodes.
+		// Comparing the given argument with our defined commands & assigning respective keycodes.
 		if(!strcmp(argv[1],"up"))
 		{
 			key = up;

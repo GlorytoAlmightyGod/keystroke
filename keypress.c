@@ -19,50 +19,33 @@
 int main(int argc, char *argv[])
 {
 	if(argc<2)	// quite clear!
-	{
-		printf("Missing arguements");
-	}
+	{printf("Missing arguements");}
 	else
 	{
 		unsigned int key,keycode;
-		
 		// Comparing the given argument with our defined commands & assigning respective keycodes.
 		if(!strcmp(argv[1],"up"))
-		{
-			key = up;
-		}
+		{key = up;}
 		else if(!strcmp(argv[1],"down"))
-		{
-			key = down;
-		}
+		{key = down;}
 		else if(!strcmp(argv[1],"left"))
-		{
-			key = left;
-		}
+		{key = left;}
 		else if(!strcmp(argv[1],"right"))
-		{
-			key = right;
-		}
+		{key = right;}
 		else if(!strcmp(argv[1],"enter"))
-		{
-			key = enter;
-		}
+		{key = enter;}
 		else if(!strcmp(argv[1],"backspace"))
-		{
-			key = backspace;
-		}
+		{key = backspace;}
 		
 		Display *display;
 		display = XOpenDisplay(NULL);				// startup
 		
 		keycode = XKeysymToKeycode(display, key);
-		
 		XTestFakeKeyEvent(display, keycode, 1, 0);	// hit the key
-		XTestFakeKeyEvent(display, keycode, 0, 0);	// release the key
+		XTestFakeKeyEvent(display, keycode, 0, 0);	// release the key	
 		
 		XFlush(display);							// cleanup
 		XCloseDisplay(display);
 	}
-
 	return 1;
 }
